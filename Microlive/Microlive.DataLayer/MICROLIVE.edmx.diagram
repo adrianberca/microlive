@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f29cab385bbb4315ba0e7c8b08da10a0" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="MICROLIVEModel.AspNetRole" Width="1.5" PointX="0.75" PointY="2.375" />
+        <EntityTypeShape EntityType="MICROLIVEModel.AspNetUser" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="MICROLIVEModel.Comment" Width="1.5" PointX="8.5" PointY="4.75" />
+        <EntityTypeShape EntityType="MICROLIVEModel.Image" Width="1.5" PointX="5.25" PointY="2" />
+        <EntityTypeShape EntityType="MICROLIVEModel.Tag" Width="1.5" PointX="9.75" PointY="2.125" />
+        <EntityTypeShape EntityType="MICROLIVEModel.User" Width="1.5" PointX="5.75" PointY="5.75" />
+        <AssociationConnector Association="MICROLIVEModel.FK_Images_Images" />
+        <AssociationConnector Association="MICROLIVEModel.FK_Comments_Images" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="MICROLIVEModel.FK_Tags_Comments" />
+        <AssociationConnector Association="MICROLIVEModel.FK_Tags_Images" />
+        <AssociationConnector Association="MICROLIVEModel.AspNetUserRoles" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
