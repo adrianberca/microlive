@@ -12,7 +12,7 @@ namespace Microlive.DataLayer
     using System;
     using System.Collections.Generic;
     
-    public partial class User
+    public partial class User:Interfaces.IDataAccesObject
     {
         public System.Guid Id { get; set; }
         public string Email { get; set; }

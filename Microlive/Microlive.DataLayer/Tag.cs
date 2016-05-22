@@ -7,12 +7,14 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using Microlive.DataLayer.Interfaces;
+
 namespace Microlive.DataLayer
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Tag
+    public partial class Tag : IDataAccesObjectWithSinglePk
     {
         public System.Guid Id { get; set; }
         public System.Guid ImageId { get; set; }

@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{D658D4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microlive.Model", "Microlive.Model\Microlive.Model.csproj", "{E03864CF-7721-405C-8E11-6AF6DB5088DD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLogic", "BusinessLogic", "{44B62C40-6C60-4C5B-ABBF-17036EA59CA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microlive.BusinessLogic", "Microlive.BusinessLogic\Microlive.BusinessLogic.csproj", "{A6C3C177-CAC4-4A6A-ACCB-023434087C8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,10 @@ Global
 		{E03864CF-7721-405C-8E11-6AF6DB5088DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E03864CF-7721-405C-8E11-6AF6DB5088DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E03864CF-7721-405C-8E11-6AF6DB5088DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6C3C177-CAC4-4A6A-ACCB-023434087C8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6C3C177-CAC4-4A6A-ACCB-023434087C8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6C3C177-CAC4-4A6A-ACCB-023434087C8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6C3C177-CAC4-4A6A-ACCB-023434087C8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,5 +46,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{E531BBC1-0E7E-4A5A-B453-581D666A1C54} = {D79707FE-8D8E-46E3-9394-9A5809D552A0}
 		{E03864CF-7721-405C-8E11-6AF6DB5088DD} = {D658D4C7-1D86-49A7-9441-D86691375943}
+		{A6C3C177-CAC4-4A6A-ACCB-023434087C8B} = {44B62C40-6C60-4C5B-ABBF-17036EA59CA9}
 	EndGlobalSection
 EndGlobal

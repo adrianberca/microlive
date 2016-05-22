@@ -53,6 +53,9 @@
     <Compile Include="Image.cs">
       <DependentUpon>Microlive.tt</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\IModel.cs" />
+    <Compile Include="Interfaces\IModelWithSinglePK.cs" />
+    <Compile Include="Interfaces\IModelWithStatus.cs" />
     <Compile Include="Microlive.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

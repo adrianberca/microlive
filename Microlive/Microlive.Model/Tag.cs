@@ -7,12 +7,14 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using Microlive.Model.Interfaces;
+
 namespace Microlive.Model
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Tag
+    public partial class Tag:Interfaces.IModel, IModelWithSinglePk
     {
         public System.Guid Id { get; set; }
         public System.Guid ImageId { get; set; }

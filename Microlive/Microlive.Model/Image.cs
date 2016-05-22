@@ -7,12 +7,14 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using Microlive.Model.Interfaces;
+
 namespace Microlive.Model
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Image
+    public partial class Image:Interfaces.IModel, IModelWithSinglePk
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Image()

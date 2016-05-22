@@ -79,7 +79,8 @@ namespace Microlive.Controllers
             switch (result)
             {
                 case SignInStatus.Success:
-                    return RedirectToLocal(returnUrl);
+                    return View("AfterLogin" ,model);
+                    //return RedirectToLocal(returnUrl);
                 case SignInStatus.LockedOut:
                     return View("Lockout");
                 case SignInStatus.RequiresVerification:
@@ -169,7 +170,7 @@ namespace Microlive.Controllers
             }
 
             // If we got this far, something failed, redisplay form
-            return View(model);
+            return View("MultipleActions",model);
         }
 
         //

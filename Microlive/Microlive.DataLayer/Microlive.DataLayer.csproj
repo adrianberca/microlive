@@ -57,13 +57,21 @@
     <Compile Include="AspNetUser.cs">
       <DependentUpon>Microlive.tt</DependentUpon>
     </Compile>
-    <Compile Include="Class1.cs" />
+    <Compile Include="BaseRepo\BaseRepo.cs" />
+    <Compile Include="BaseRepo\BaseRepoWithCompositePk.cs" />
+    <Compile Include="BaseRepo\BaseRepoWithSinglePk.cs" />
     <Compile Include="Comment.cs">
       <DependentUpon>Microlive.tt</DependentUpon>
     </Compile>
+    <Compile Include="DataRepository.cs" />
+    <Compile Include="GenericDataRepository.cs" />
     <Compile Include="Image.cs">
       <DependentUpon>Microlive.tt</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\IDataAccesObject.cs" />
+    <Compile Include="Interfaces\IDataAccesObjectWithSinglePK.cs" />
+    <Compile Include="Interfaces\IDataAccesObjectWithSinglePKAndStatus.cs" />
+    <Compile Include="Interfaces\IDataAccesObjectWithStatus.cs" />
     <Compile Include="Microlive.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -80,6 +88,9 @@
       <DependentUpon>Microlive.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CommentRepository.cs" />
+    <Compile Include="Repositories\ImageRepository.cs" />
+    <Compile Include="Repositories\TagRepository.cs" />
     <Compile Include="Tag.cs">
       <DependentUpon>Microlive.tt</DependentUpon>
     </Compile>

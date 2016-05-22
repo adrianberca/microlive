@@ -196,8 +196,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CommentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ImagesController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\TagsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -227,6 +230,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\Custom\imageModule.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -272,9 +276,15 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Account\Actions.cshtml" />
+    <Content Include="Views\Account\MultipleActions.cshtml" />
+    <Content Include="Views\Account\AfterLogin.cshtml" />
+    <Content Include="Views\Images\Upload.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Comments\" />
+    <Folder Include="Views\Tags\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -288,6 +298,23 @@
     <EmbeddedResource Include="Migrations\201605211545520_FirstNameLastNameBadgeCode.resx">
       <DependentUpon>201605211545520_FirstNameLastNameBadgeCode.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Microlive.BusinessLogic\Microlive.BusinessLogic.csproj">
+      <Project>{a6c3c177-cac4-4a6a-accb-023434087c8b}</Project>
+      <Name>Microlive.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Microlive.DataLayer\Microlive.DataLayer.csproj">
+      <Project>{e531bbc1-0e7e-4a5a-b453-581d666a1c54}</Project>
+      <Name>Microlive.DataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Microlive.Model\Microlive.Model.csproj">
+      <Project>{e03864cf-7721-405c-8e11-6af6db5088dd}</Project>
+      <Name>Microlive.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

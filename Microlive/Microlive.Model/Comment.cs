@@ -7,12 +7,14 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using Microlive.Model.Interfaces;
+
 namespace Microlive.Model
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Comment
+    public partial class Comment:Interfaces.IModel, IModelWithSinglePk
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Comment()

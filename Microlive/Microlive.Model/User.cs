@@ -12,7 +12,7 @@ namespace Microlive.Model
     using System;
     using System.Collections.Generic;
     
-    public partial class User
+    public partial class User:Interfaces.IModel
     {
         public System.Guid Id { get; set; }
         public string Email { get; set; }
